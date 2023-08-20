@@ -1,12 +1,13 @@
 ---
 author: Nursyah
 pubDatetime: 2023-08-19T16:12:41Z
-title: Cara pikir ku setelah belajar ngoding
-postSlug: cara-pikir-ku-setelah-belajar-ngoding
+title: Image recognition menggunakan tensorflow keras
+postSlug: image-recognition-menggunakan-keras
 featured: true
-draft: true
+draft: false
 tags:
-  - cerita
+  - tutorial
+  - asd
 ogImage: ""
 description:
   Some rules & recommendations for creating or adding new posts using AstroPaper

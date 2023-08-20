@@ -19,10 +19,12 @@ export const LOGO_IMAGE = {
   height: 46,
 };
  
+
+
 export const SOCIALS: SocialObjects = [
   {
     name: "Github",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://github.com/nursyah21",
     linkTitle: ` ${SITE.title} on Github`,
     active: true,
   },
@@ -30,11 +32,11 @@ export const SOCIALS: SocialObjects = [
     name: "Facebook",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Facebook`,
-    active: true,
+    active: false,
   },
   {
     name: "Instagram",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://instagram.com/n.ursyah",
     linkTitle: `${SITE.title} on Instagram`,
     active: true,
   },
@@ -42,7 +44,7 @@ export const SOCIALS: SocialObjects = [
     name: "LinkedIn",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on LinkedIn`,
-    active: true,
+    active: false,
   },
   {
     name: "Mail",

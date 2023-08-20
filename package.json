@@ -13,12 +13,14 @@
     "format": "prettier --plugin-search-dir=. --write .",
     "cz": "cz",
     "prepare": "husky install",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "publish": "surge dist/ --domain https://nursyah.surge.sh"
   },
   "dependencies": {
     "@astrojs/rss": "^2.4.1",
     "@resvg/resvg-js": "^2.4.1",
     "astro": "^2.4.5",
+    "axios": "^1.4.0",
     "fuse.js": "^6.6.2",
     "github-slugger": "^2.0.0",
     "remark-collapse": "^0.1.2",

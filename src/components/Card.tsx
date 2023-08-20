@@ -5,10 +5,11 @@ export interface Props {
   href?: string;
   frontmatter: BlogFrontmatter;
   secHeading?: boolean;
+  tags?: string[];
 }
 
 export default function Card({ href, frontmatter, secHeading = true }: Props) {
-  const { title, pubDatetime, description } = frontmatter;
+  const { title, pubDatetime, description,tags } = frontmatter;
   return (
     <li className="my-6">
       <a
@@ -25,6 +26,13 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
           </h3>
         )}
       </a>
+      <p>
+        {
+          tags.length && tags.map((data,idx)=>{
+            return <a className="cursor-pointer mr-2 text-sm" key={idx}>#{data}</a>
+          })
+        }
+      </p>
       <Datetime datetime={pubDatetime} />
       <p>{description}</p>
     </li>

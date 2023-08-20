@@ -1,9 +1,11 @@
 ---
 import { SITE } from "@config";
 import Breadcrumbs from "@components/Breadcrumbs.astro";
+import Hr from "@components/Hr.astro";
 import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
 import Layout from "./Layout.astro";
+import axios from 'axios'
 
 export interface Props {
   frontmatter: {
@@ -18,11 +20,88 @@ const { frontmatter } = Astro.props;
 <Layout title={`${frontmatter.title} | ${SITE.title}`}>
   <Header activeNav="about" />
   <Breadcrumbs />
+
   <main id="main-content">
     <section id="about" class="prose mb-28 max-w-3xl prose-img:border-0">
       <h1 class="text-2xl tracking-wider sm:text-3xl">{frontmatter.title}</h1>
       <slot />
+
+      <div>
+        <h2>Client</h2>
+      </div>
+
+      <hr/>
+      <section class="max-w-4xl px-6 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800">
+        <form>
+          <div class="">
+              <div class="mt-2">
+                  <label class="text-gray-700 dark:text-gray-200" for="username">Nama</label>
+                  <input id="nama" placeholder="eko" type="text" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring">
+              </div>
+
+              <div class="mt-2">
+                <label class="text-gray-700 dark:text-gray-200" for="password">No. WA(+62)</label>
+                <input id="nowa" placeholder="089529456280" type="text" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring">
+            </div>
+  
+              <div class="mt-2">
+                  <label class="text-gray-700 dark:text-gray-200" for="password">Deskripsi</label>
+                  <input id="deskripsi" placeholder="bikinkan website untuk penyewaan mobil" type="text" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring">
+              </div>
+  
+              <div class="mt-2">
+                  <label class="text-gray-700 dark:text-gray-200" for="passwordConfirmation">Budget</label>
+                  <input id="budget" placeholder="1,5jt" type="text" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring">
+              </div>
+          </div>
+  
+          <div class="flex justify-end mt-6">
+              <button class="px-8 py-2.5 leading-5 text-white transition-colors duration-300 transform bg-skin-accent rounded-md  hover:bg-orange-800 focus:outline-none focus:bg-gray-600 ">Send</button>
+          </div>
+      </form>
+      </section>
     </section>
   </main>
   <Footer />
+
 </Layout>
+
+<script>
+
+const postData = {
+  to: `whatsapp:+6289529456271`,
+  from: `whatsapp:089529456271`,
+  body: 'your appointment is coming up on July 21 at 3pm'
+};
+
+const auth = {
+  username: 'acd956ee04d3273675ff485b9e45943266',
+  password: 'a9dd7d742a68e83f3d4b9b43d92077af'
+};
+
+
+  document.querySelector('form').addEventListener('submit', function(event) {
+    // Perform your validation checks here
+    // `Saya%20ingin%20memverifikasi%20terkait%20pembayaran%0Apendaftaran%20ujian%20%2A${encodeURI(String(props.history.data.questionbank.category).toUpperCase())}%2A%20dengan%20data%20%3A%0ANIK%2FNIM%20%3A%20${props.user.nim_or_nik}%0ANama%20%3A%20${encodeURI(props.user.name)}%0ARekening%20Tujuan%20%3A%20${encodeURI(props.history.data.payment.payment_type)}%0ABiaya%20%3A%20%2ARp%20${encodeURI(new Intl.NumberFormat("id").format(props.history.data.payment.biaya))}%2A%0A%0A_%2Anote%20%3D%20Setelah%20pesan%20ini%20terkirim%2C%20kirim%20bukti%20pembayaran%20berupa%20gambar%20atau%20pdf_`
+    event.preventDefault();
+    // @ts-ignore
+    let nama  = document.querySelector('#nama').value
+    // @ts-ignore
+    let deskripsi = document.querySelector('#deskripsi').value
+    console.log(nama, deskripsi)
+
+    // @ts-ignore
+    // axios.post('https://api.twilio.com/2010-04-01/accounts/acd956ee04d3273675ff485b9e45943266/messages.json', postData, {
+    //     auth: auth
+    // })
+    //   .then(response => {
+    //     console.log('Message sent:', response.data);
+    //   })
+    //   .catch(error => {
+    //     console.error('An error occurred:', error.response.data);
+    //   });
+});
+
+
+</script>
+
