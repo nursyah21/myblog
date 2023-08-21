@@ -198,6 +198,8 @@ const { activeNav } = Astro.props;
   const menuIcon = document.querySelector(".menu-icon");
   const menuItems = document.querySelector("#menu-items");
 
+  
+
   menuBtn?.addEventListener("click", () => {
     const menuExpanded = menuBtn.getAttribute("aria-expanded") === "true";
     menuIcon?.classList.toggle("is-active");
@@ -207,5 +209,6 @@ const { activeNav } = Astro.props;
       menuExpanded ? "Open Menu" : "Close Menu"
     );
     menuItems?.classList.toggle("display-none");
+    console.log()
   });
 </script>

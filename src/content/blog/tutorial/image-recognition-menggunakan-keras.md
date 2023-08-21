@@ -7,11 +7,9 @@ featured: true
 draft: false
 tags:
   - tutorial
-  - asd
+  - ai
 ogImage: ""
-description:
-  Some rules & recommendations for creating or adding new posts using AstroPaper
-  theme.
+description: Tutorial image recognition menggunakan keras
 ---
 
 Saya pertama kali belajar ngoding sepertinya sudah lama, sejak saat sd/smp sepertinya.

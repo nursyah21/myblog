@@ -70,96 +70,51 @@ const client: Client[] = [
       </div>
 
       <hr/>
-      <section class="max-w-4xl py-2 px-6 mx-auto rounded-md shadow-md ">
+      <section id="form" class="max-w-4xl py-2 px-6 mx-auto rounded-md shadow-md">
         <form>
-          <div class="">
-              <div class="mt-2">
-                  <label class="" for="username">Nama</label>
-                  <input id="nama" placeholder="eko" type="text" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring">
-              </div>
+          <div class="mt-2">
+              <label class="label" for="username">Nama</label>
+              <input id="nama" placeholder="eko" type="text" class="input">
+          </div>
 
-              <div class="mt-2">
-                <label class="" for="password">Nomor WA(+62)</label>
-                <input id="nowa" placeholder="089529456280" type="text" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring">
-            </div>
-  
-              <div class="mt-2">
-                  <label class="" for="password">Deskripsi</label>
-                  <textarea id="deskripsi" placeholder="bikinkan website untuk penyewaan mobil" class="block w-full px-2 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring">
-                  </textarea>
-              </div>
-  
-              <div class="mt-2">
-                  <label class="" for="passwordConfirmation">Budget</label>
-                  <input id="budget" placeholder="1,5jt" type="text" class="block w-full px-4 py-2 mt-2 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring">
-              </div>
-          </div>
-  
-          <div class="flex justify-end my-6">
-              <button class="px-8 py-2.5 leading-5 text-white transition-colors duration-300 transform bg-skin-accent rounded-md  hover:opacity-60 focus:outline-none focus:bg-gray-600 ">Send</button>
-          </div>
+        <div class="mt-2">
+            <label class="label" for="password">Nomor WA(+62)</label>
+            <input id="nowa" placeholder="089529456280" type="text" class="input">
+        </div>
+
+        <div class="mt-2">
+            <label class="label" for="password">Deskripsi</label>
+            <textarea id="deskripsi" placeholder="bikinkan website untuk penyewaan mobil" class="textarea"></textarea>
+        </div>
+
+        <div class="mt-2">
+            <label class="label" for="passwordConfirmation">Budget</label>
+            <input id="budget" placeholder="1,5jt" type="text" class="input">
+        </div>
+      </div>
+
+      <div class="flex justify-end my-6">
+          <button class="btnsubmit">Send</button>   
       </form>
       </section>
     </section>
   </main>
   <Footer />
-
 </Layout>
-// <script>
-//   const targetElement = document.querySelector('html')
+
+<style>
+  .input{
+    @apply block w-full px-4 py-2 mt-2 border  rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring;
+  }
+
+  .textarea{
+    @apply block w-full px-4 py-2 mt-2 border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring;
+  }
   
-//   const observer = new MutationObserver(function(mutationsList) {
-//     for (let mutation of mutationsList) {
-//       if ( mutation.type === "attributes") {
-//         // Handle the changes here
-        
-//         if(mutation.target){
-//           try{
-//             // @ts-ignore
-//             let i = mutation.target.getAttribute('data-theme')
-//             if(i){
-//               if(i == 'dark'){
-//                 document.querySelectorAll('label').forEach(e=>
-//                   e.classList.add('text-gray-200')
-//                 )
-//                 document.querySelectorAll('input').forEach(e=>{
-//                   e.classList.add('bg-gray-800')
-//                   e.classList.add('text-gray-300')
-//                   e.classList.add('border-gray-600')
-//                 })
-//                 document.querySelectorAll('textarea').forEach(e=>
-//                 {
-//                   e.classList.add('bg-gray-800')
-//                   e.classList.add('text-gray-300')
-//                   e.classList.add('border-gray-600')
-//                 }
-//                 )
-//               }
-//               if(i == 'light'){
-//                 document.querySelectorAll('label').forEach(e=>
-//                   e.classList.remove('text-gray-200')
-//                 )
-//                 document.querySelectorAll('input').forEach(e=>{
-//                   e.classList.remove('bg-gray-800')
-//                   e.classList.remove('text-gray-300')
-//                   e.classList.remove('border-gray-600')
-//                 }
-//                 )
-//                 document.querySelectorAll('textarea').forEach(e=> {
-//                   e.classList.remove('bg-gray-800')
-//                   e.classList.remove('text-gray-300')
-//                   e.classList.remove('border-gray-600')
-//                 }
-//                 )
-//               }
-//             }
-//             }catch(e){}
-//         }
-//       }
-//     }
-//   });
-
-//   // Start observing the target element for any changes
-//   observer.observe(targetElement, { attributes: true, childList: true, subtree: true });
-
-// </script>
+  .label{
+    @apply dark:text-gray-200;
+  }
+  .btnsubmit{
+    @apply px-8 py-2.5 leading-5 text-white transition-colors duration-300 transform bg-skin-accent rounded-md  hover:opacity-60 focus:outline-none focus:bg-gray-600 ;
+  }
+</style>

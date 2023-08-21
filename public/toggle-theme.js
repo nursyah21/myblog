@@ -25,8 +25,40 @@ function setPreference() {
 
 function reflectPreference() {
   document.firstElementChild.setAttribute("data-theme", themeValue);
-
   document.querySelector("#theme-btn")?.setAttribute("aria-label", themeValue);
+  console.log(themeValue);
+  if (themeValue == "light") {
+    const lightClassInput = "text-gray-700 bg-white border-gray-200";
+    const lightClassLabel = "text-gray-700";
+    document
+      .querySelectorAll(".label")
+      .forEach(e => e.classList.remove("text-gray-200"));
+
+    document.querySelectorAll(".input").forEach(e => {
+      lightClassInput.split(" ").forEach(i => {
+        e.classList.add(i);
+      });
+    });
+    document.querySelectorAll(".textarea").forEach(e => {
+      lightClassInput.split(" ").forEach(i => {
+        e.classList.add(i);
+      });
+    });
+  } else {
+    document
+      .querySelectorAll(".label")
+      .forEach(e => e.classList.add("text-gray-200"));
+    document.querySelectorAll(".input").forEach(e => {
+      e.classList.add("bg-gray-800");
+      e.classList.add("text-gray-300");
+      e.classList.add("border-gray-600");
+    });
+    document.querySelectorAll(".textarea").forEach(e => {
+      e.classList.add("bg-gray-800");
+      e.classList.add("text-gray-300");
+      e.classList.add("border-gray-600");
+    });
+  }
 }
 
 // set early so no page flashes / CSS is made aware

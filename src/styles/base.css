@@ -21,47 +21,7 @@
     --color-card-muted: 138, 51, 2;
     --color-border: 171, 75, 8;
   }
-  section[data-theme="light"] {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  }
-  section[data-theme="dark"] {
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-  }
-  label[data-theme="light"] {
-    --tw-bg-opacity: 1;
-    color: rgb(31 41 55 / var(--tw-bg-opacity));
-  }
-  label[data-theme="dark"] {
-    --tw-bg-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-bg-opacity));
-  }
 
-  input[data-theme="light"] {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-    --tw-text-opacity: 1;
-    color: rgb(55 65 81 / var(--tw-text-opacity));
-  }
-  input[data-theme="dark"] {
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-    --tw-text-opacity: 1;
-    color: rgb(209 213 219 / var(--tw-text-opacity));
-  }
-  /* input[data-theme="light"]{
-    
-  }
-  input[data-theme="dark"]{
-
-  }
-  textarea[data-theme="light"]{
-    
-  }
-  textarea[data-theme="dark"]{
-
-  } */
   #sun-svg,
   html[data-theme="dark"] #moon-svg {
     display: none;
@@ -70,6 +30,9 @@
   html[data-theme="dark"] #sun-svg {
     display: block;
   }
+
+
+  
   body {
     @apply flex min-h-screen flex-col bg-skin-fill font-mono text-skin-base 
     selection:bg-skin-accent selection:bg-opacity-70 selection:text-skin-inverted;
