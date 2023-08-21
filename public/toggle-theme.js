@@ -26,37 +26,53 @@ function setPreference() {
 function reflectPreference() {
   document.firstElementChild.setAttribute("data-theme", themeValue);
   document.querySelector("#theme-btn")?.setAttribute("aria-label", themeValue);
-  console.log(themeValue);
-  if (themeValue == "light") {
-    const lightClassInput = "text-gray-700 bg-white border-gray-200";
-    const lightClassLabel = "text-gray-700";
-    document
-      .querySelectorAll(".label")
-      .forEach(e => e.classList.remove("text-gray-200"));
+  // console.log(themeValue);
+  const lightClassInput =
+    "text-gray-700 bg-white border-gray-200 focus:border-blue-400";
+  const lightClassLabel = "text-gray-700";
+  const darkClassInput =
+    "bg-gray-800 text-gray-300 border-gray-600 focus:border-blue-300";
+  const darkClassLabel = "text-gray-200";
 
-    document.querySelectorAll(".input").forEach(e => {
-      lightClassInput.split(" ").forEach(i => {
-        e.classList.add(i);
-      });
-    });
-    document.querySelectorAll(".textarea").forEach(e => {
-      lightClassInput.split(" ").forEach(i => {
-        e.classList.add(i);
+  if (themeValue == "light") {
+    ".label .input .textarea".split(" ").forEach(j => {
+      document.querySelectorAll(j).forEach(e => {
+        if (j == ".label") {
+          darkClassLabel.split(" ").forEach(i => {
+            e.classList.remove(i);
+          });
+          lightClassLabel.split(" ").forEach(i => {
+            e.classList.add(i);
+          });
+        } else {
+          darkClassInput.split(" ").forEach(i => {
+            e.classList.remove(i);
+          });
+          lightClassInput.split(" ").forEach(i => {
+            e.classList.add(i);
+          });
+        }
       });
     });
   } else {
-    document
-      .querySelectorAll(".label")
-      .forEach(e => e.classList.add("text-gray-200"));
-    document.querySelectorAll(".input").forEach(e => {
-      e.classList.add("bg-gray-800");
-      e.classList.add("text-gray-300");
-      e.classList.add("border-gray-600");
-    });
-    document.querySelectorAll(".textarea").forEach(e => {
-      e.classList.add("bg-gray-800");
-      e.classList.add("text-gray-300");
-      e.classList.add("border-gray-600");
+    ".label .input .textarea".split(" ").forEach(j => {
+      document.querySelectorAll(j).forEach(e => {
+        if (j == ".label") {
+          darkClassLabel.split(" ").forEach(i => {
+            e.classList.add(i);
+          });
+          lightClassLabel.split(" ").forEach(i => {
+            e.classList.remove(i);
+          });
+        } else {
+          darkClassInput.split(" ").forEach(i => {
+            e.classList.add(i);
+          });
+          lightClassInput.split(" ").forEach(i => {
+            e.classList.remove(i);
+          });
+        }
+      });
     });
   }
 }

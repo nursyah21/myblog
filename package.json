@@ -14,7 +14,7 @@
     "cz": "cz",
     "prepare": "husky install",
     "lint": "eslint .",
-    "publish": "git add . && git commit -m \"publish\" && git push && surge dist/ https://nursyah.surge.sh"
+    "publish": "surge dist/ https://nursyah.surge.sh"
   },
   "dependencies": {
     "@astrojs/rss": "^2.4.1",
