@@ -26,31 +26,22 @@ function setPreference() {
 function reflectPreference() {
   document.firstElementChild.setAttribute("data-theme", themeValue);
   document.querySelector("#theme-btn")?.setAttribute("aria-label", themeValue);
-  // console.log(themeValue);
-  const lightClassInput =
-    "text-gray-700 bg-white border-gray-200 focus:border-blue-400";
-  const lightClassLabel = "text-gray-700";
-  const darkClassInput =
-    "bg-gray-800 text-gray-300 border-gray-600 focus:border-blue-300";
-  const darkClassLabel = "text-gray-200";
+
+  // see css code in /src/styles/base.css
+  const lightInput = "lightInput";
+  const lightLabel = "lightLabel";
+  const darkInput = "darkInput";
+  const darkLabel = "darkLabel";
 
   if (themeValue == "light") {
     ".label .input .textarea".split(" ").forEach(j => {
       document.querySelectorAll(j).forEach(e => {
         if (j == ".label") {
-          darkClassLabel.split(" ").forEach(i => {
-            e.classList.remove(i);
-          });
-          lightClassLabel.split(" ").forEach(i => {
-            e.classList.add(i);
-          });
+          e.classList.remove(darkLabel);
+          e.classList.add(lightLabel);
         } else {
-          darkClassInput.split(" ").forEach(i => {
-            e.classList.remove(i);
-          });
-          lightClassInput.split(" ").forEach(i => {
-            e.classList.add(i);
-          });
+          e.classList.remove(darkInput);
+          e.classList.add(lightInput);
         }
       });
     });
@@ -58,19 +49,11 @@ function reflectPreference() {
     ".label .input .textarea".split(" ").forEach(j => {
       document.querySelectorAll(j).forEach(e => {
         if (j == ".label") {
-          darkClassLabel.split(" ").forEach(i => {
-            e.classList.add(i);
-          });
-          lightClassLabel.split(" ").forEach(i => {
-            e.classList.remove(i);
-          });
+          e.classList.add(darkLabel);
+          e.classList.remove(lightLabel);
         } else {
-          darkClassInput.split(" ").forEach(i => {
-            e.classList.add(i);
-          });
-          lightClassInput.split(" ").forEach(i => {
-            e.classList.remove(i);
-          });
+          e.classList.add(darkInput);
+          e.classList.remove(lightInput);
         }
       });
     });
