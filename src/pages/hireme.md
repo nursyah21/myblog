@@ -7,9 +7,15 @@ title: "Hire Me"
   <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
 </div>
 
-## Saya
+## Hi
 
-Senang mempelajari teknologi baru, dan mampu berapdatasi dengan cepat. Menguasai Bahasa Pemrograman Populer seperti java, js, python, go, kotlin.
+Perkenalkan nama saya `nursyahjaya`, saya seorang pelajar yang sekarang berkuliah di `institut teknologi telkom surabaya`
+
+tarif jasa yang saya tawarkan disini menyesuaikan tingkat kesulitan dalam pembuatannya. saya menggunakan framework reactjs, react-native, atau electron dalam pembuatannya.
+
+saya juga dapat mentutor anda dalam dunia programming menggunakan bahasa c/c++, js, php, java, python
+
+bagi yang kesusahan dalam mendeploy aplikasi yang telah dibuat ke internet, saya menawarkan solusi dengan tarif harga mulai dari 20k cocok untuk kegiatan testing
 
 ## Jasa
 

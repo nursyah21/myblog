@@ -1,6 +1,8 @@
 # build output
 dist/
 .output/
+.vscode/
+.husky/
 
 # dependencies
 node_modules/
