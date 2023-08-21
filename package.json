@@ -13,8 +13,7 @@
     "format": "prettier --plugin-search-dir=. --write .",
     "cz": "cz",
     "prepare": "husky install",
-    "lint": "eslint .",
-    "publish": "surge dist/ https://nursyah.surge.sh"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@astrojs/rss": "^2.4.1",
