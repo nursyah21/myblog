@@ -7,7 +7,7 @@ title: "Hire Me"
   <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
 </div>
 
-## Deskripsi
+## Saya
 
 Senang mempelajari teknologi baru, dan mampu berapdatasi dengan cepat. Menguasai Bahasa Pemrograman Populer seperti java, js, python, go, kotlin.
 
@@ -16,4 +16,4 @@ Senang mempelajari teknologi baru, dan mampu berapdatasi dengan cepat. Menguasai
 - Pembuatan Web/Aplikasi ( mulai dari 300k/aplikasi )
 - Tutor Programming ( mulai dari 20k/jam )
 - Memperbaiki bug source code ( mulai dari 50k/bug )
-- Deploy / Hosting website  ( mulai dari 20k/bulan )
+- Deploy / Hosting website ( mulai dari 20k/bulan )

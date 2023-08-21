@@ -14,8 +14,28 @@ export interface Props {
   };
 }
 
+interface Client {
+  img?: string;
+  link?: string;
+  title?: string;
+}
+
 const { frontmatter } = Astro.props;
+
+const client: Client[] = [
+  {
+    img: 'https://desa-songo.com/favicon.svg',
+    link: 'https://desa-songo.com',
+    title: 'desa-songo'
+  },
+  {
+    img: 'https://ptsvnusantara.com/wp-content/uploads/2023/04/Logo-PTSVN-1-scaled-66x47.jpg',
+    link: 'https://ptsvnusantara.com/',
+    title: 'ptsv nusantara'
+  }
+]
 ---
+
 
 <Layout title={`${frontmatter.title} | ${SITE.title}`}>
   <Header activeNav="about" />
@@ -25,38 +45,58 @@ const { frontmatter } = Astro.props;
     <section id="about" class="prose mb-28 max-w-3xl prose-img:border-0">
       <h1 class="text-2xl tracking-wider sm:text-3xl">{frontmatter.title}</h1>
       <slot />
+        
+      <h2 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
+          Klien
+      </h2>
 
-      <div>
-        <h2>Client</h2>
+      <div class="flex justify-center mx-auto mt-6">
+          <span class="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
+          <span class="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
+          <span class="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
+      </div>
+
+      <div class="flex items-center justify-center mt-2">
+        {
+          client.length && client.map((data, index)=>{
+            return <div class="client text-center hover:animate-pulse" >
+                <a href={data.link} >
+                  <img class="m-2 p-0 object-cover rounded-full w-20 h-20 mx-5" src={data.img} alt="">
+                  <span class="text-sm text-center">{data.title}</span>
+                </a>
+              </div>
+          })
+        }
       </div>
 
       <hr/>
-      <section class="max-w-4xl px-6 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800">
+      <section class="max-w-4xl py-2 px-6 mx-auto rounded-md shadow-md ">
         <form>
           <div class="">
               <div class="mt-2">
-                  <label class="text-gray-700 dark:text-gray-200" for="username">Nama</label>
-                  <input id="nama" placeholder="eko" type="text" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring">
+                  <label class="" for="username">Nama</label>
+                  <input id="nama" placeholder="eko" type="text" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring">
               </div>
 
               <div class="mt-2">
-                <label class="text-gray-700 dark:text-gray-200" for="password">No. WA(+62)</label>
-                <input id="nowa" placeholder="089529456280" type="text" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring">
+                <label class="" for="password">Nomor WA(+62)</label>
+                <input id="nowa" placeholder="089529456280" type="text" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring">
             </div>
   
               <div class="mt-2">
-                  <label class="text-gray-700 dark:text-gray-200" for="password">Deskripsi</label>
-                  <input id="deskripsi" placeholder="bikinkan website untuk penyewaan mobil" type="text" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring">
+                  <label class="" for="password">Deskripsi</label>
+                  <textarea id="deskripsi" placeholder="bikinkan website untuk penyewaan mobil" class="block w-full px-2 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring">
+                  </textarea>
               </div>
   
               <div class="mt-2">
-                  <label class="text-gray-700 dark:text-gray-200" for="passwordConfirmation">Budget</label>
-                  <input id="budget" placeholder="1,5jt" type="text" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring">
+                  <label class="" for="passwordConfirmation">Budget</label>
+                  <input id="budget" placeholder="1,5jt" type="text" class="block w-full px-4 py-2 mt-2 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring">
               </div>
           </div>
   
-          <div class="flex justify-end mt-6">
-              <button class="px-8 py-2.5 leading-5 text-white transition-colors duration-300 transform bg-skin-accent rounded-md  hover:bg-orange-800 focus:outline-none focus:bg-gray-600 ">Send</button>
+          <div class="flex justify-end my-6">
+              <button class="px-8 py-2.5 leading-5 text-white transition-colors duration-300 transform bg-skin-accent rounded-md  hover:opacity-60 focus:outline-none focus:bg-gray-600 ">Send</button>
           </div>
       </form>
       </section>
@@ -65,43 +105,61 @@ const { frontmatter } = Astro.props;
   <Footer />
 
 </Layout>
+// <script>
+//   const targetElement = document.querySelector('html')
+  
+//   const observer = new MutationObserver(function(mutationsList) {
+//     for (let mutation of mutationsList) {
+//       if ( mutation.type === "attributes") {
+//         // Handle the changes here
+        
+//         if(mutation.target){
+//           try{
+//             // @ts-ignore
+//             let i = mutation.target.getAttribute('data-theme')
+//             if(i){
+//               if(i == 'dark'){
+//                 document.querySelectorAll('label').forEach(e=>
+//                   e.classList.add('text-gray-200')
+//                 )
+//                 document.querySelectorAll('input').forEach(e=>{
+//                   e.classList.add('bg-gray-800')
+//                   e.classList.add('text-gray-300')
+//                   e.classList.add('border-gray-600')
+//                 })
+//                 document.querySelectorAll('textarea').forEach(e=>
+//                 {
+//                   e.classList.add('bg-gray-800')
+//                   e.classList.add('text-gray-300')
+//                   e.classList.add('border-gray-600')
+//                 }
+//                 )
+//               }
+//               if(i == 'light'){
+//                 document.querySelectorAll('label').forEach(e=>
+//                   e.classList.remove('text-gray-200')
+//                 )
+//                 document.querySelectorAll('input').forEach(e=>{
+//                   e.classList.remove('bg-gray-800')
+//                   e.classList.remove('text-gray-300')
+//                   e.classList.remove('border-gray-600')
+//                 }
+//                 )
+//                 document.querySelectorAll('textarea').forEach(e=> {
+//                   e.classList.remove('bg-gray-800')
+//                   e.classList.remove('text-gray-300')
+//                   e.classList.remove('border-gray-600')
+//                 }
+//                 )
+//               }
+//             }
+//             }catch(e){}
+//         }
+//       }
+//     }
+//   });
 
-<script>
+//   // Start observing the target element for any changes
+//   observer.observe(targetElement, { attributes: true, childList: true, subtree: true });
 
-const postData = {
-  to: `whatsapp:+6289529456271`,
-  from: `whatsapp:089529456271`,
-  body: 'your appointment is coming up on July 21 at 3pm'
-};
-
-const auth = {
-  username: 'acd956ee04d3273675ff485b9e45943266',
-  password: 'a9dd7d742a68e83f3d4b9b43d92077af'
-};
-
-
-  document.querySelector('form').addEventListener('submit', function(event) {
-    // Perform your validation checks here
-    // `Saya%20ingin%20memverifikasi%20terkait%20pembayaran%0Apendaftaran%20ujian%20%2A${encodeURI(String(props.history.data.questionbank.category).toUpperCase())}%2A%20dengan%20data%20%3A%0ANIK%2FNIM%20%3A%20${props.user.nim_or_nik}%0ANama%20%3A%20${encodeURI(props.user.name)}%0ARekening%20Tujuan%20%3A%20${encodeURI(props.history.data.payment.payment_type)}%0ABiaya%20%3A%20%2ARp%20${encodeURI(new Intl.NumberFormat("id").format(props.history.data.payment.biaya))}%2A%0A%0A_%2Anote%20%3D%20Setelah%20pesan%20ini%20terkirim%2C%20kirim%20bukti%20pembayaran%20berupa%20gambar%20atau%20pdf_`
-    event.preventDefault();
-    // @ts-ignore
-    let nama  = document.querySelector('#nama').value
-    // @ts-ignore
-    let deskripsi = document.querySelector('#deskripsi').value
-    console.log(nama, deskripsi)
-
-    // @ts-ignore
-    // axios.post('https://api.twilio.com/2010-04-01/accounts/acd956ee04d3273675ff485b9e45943266/messages.json', postData, {
-    //     auth: auth
-    // })
-    //   .then(response => {
-    //     console.log('Message sent:', response.data);
-    //   })
-    //   .catch(error => {
-    //     console.error('An error occurred:', error.response.data);
-    //   });
-});
-
-
-</script>
-
+// </script>
