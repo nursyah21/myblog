@@ -1,8 +1,8 @@
 /* PrismJS 1.29.0
 https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+awk+bash+basic+c+csharp+cpp+go+go-module+java+python+shell-session+sql+typescript&plugins=show-language+previewers+toolbar+copy-to-clipboard */
-code[class*=language-],
+/* code[class*=language-],
 pre[class*=language-] {
-    color: #000;
+    /* color: #000; */
     /* background: 0 0;
     text-shadow: 0 1px #fff; */
     /* font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; */
@@ -20,7 +20,7 @@ pre[class*=language-] {
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none */
-}
+} */
 
 code[class*=language-] ::-moz-selection,
 code[class*=language-]::-moz-selection,

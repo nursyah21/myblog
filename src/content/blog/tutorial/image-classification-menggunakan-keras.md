@@ -8,15 +8,16 @@ draft: false
 tags:
   - tutorial
   - ai
+  - python
 ogImage: ""
-description: Pada tutorial ini kita akan mempelajari membuat AI yang dapat membedakan anjing dan kucing berdasarkan gambar
+description: Pada tutorial ini kita akan mempelajari cara membuat AI yang dapat membedakan anjing dan kucing berdasarkan gambar
 ---
 
 sumber: https://keras.io/examples/vision/image_classification_from_scratch/
 
 <!-- pada postingan ini kita akan mempelajari bagaimana cara membuat image classification dari dasar dengan menggunakan kumpulan gambar yang ada pada hardisk kita dan keras (tensorflow).  -->
 
-Pada tutorial ini kita akan mempelajari membuat AI yang dapat membedakan anjing dan kucing berdasarkan gambar, menggunakan kumpulan gambar yang ada pada hardisk kita dan framework keras
+Pada tutorial ini kita akan mempelajari cara membuat AI yang dapat membedakan anjing dan kucing berdasarkan gambar, menggunakan kumpulan gambar yang ada pada hardisk kita dan framework keras
 
 ### Introduction
 

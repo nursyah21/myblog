@@ -9,7 +9,7 @@ export interface Props {
 }
 
 export default function Card({ href, frontmatter, secHeading = true }: Props) {
-  const { title, pubDatetime, description,tags } = frontmatter;
+  const { title, pubDatetime, description, tags } = frontmatter;
   return (
     <li className="my-6">
       <a
@@ -27,11 +27,18 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
         )}
       </a>
       <p>
-        {
-          tags.length && tags.map((data,idx)=>{
-            return <a className="cursor-pointer mr-2 text-sm" key={idx}>#{data}</a>
-          })
-        }
+        {tags.length &&
+          tags.map((data, idx) => {
+            return (
+              <a
+                href={"/tags/" + data}
+                className="mr-2 cursor-pointer text-sm"
+                key={idx}
+              >
+                #{data}
+              </a>
+            );
+          })}
       </p>
       <Datetime datetime={pubDatetime} />
       <p>{description}</p>

@@ -18,7 +18,9 @@ saya juga dapat mentutor anda dalam dunia programming menggunakan bahasa c/c++, 
 
 bagi yang kesusahan dalam mendeploy aplikasi yang telah dibuat ke internet, saya menawarkan solusi dengan tarif harga mulai dari 20k cocok untuk kegiatan testing -->
 
-## Harga
+<!-- ## Harga -->
+
+saya siap, untuk mencurahkan waktu saya agar bisa memberikan hasil yang terbaik untuk anda
 
 - Pembuatan Web/Aplikasi ( mulai dari 300k/aplikasi )
 - Tutor Programming ( mulai dari 20k/jam )
