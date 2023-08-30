@@ -1,0 +1,908 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[TensorFlow]
+   Install   Learn
+    * Introduction
+      New_to_TensorFlow?
+    * TensorFlow
+      The_core_open_source_ML_library
+    * For_JavaScript
+      TensorFlow.js_for_ML_using_JavaScript
+    * For_Mobile_&_Edge
+      TensorFlow_Lite_for_mobile_and_edge_devices
+    * For_Production
+      TensorFlow_Extended_for_end-to-end_ML_components
+  API
+    * TensorFlow_(v2.13.0)
+    * Versionsâ¦
+    * TensorFlow.js
+    * TensorFlow_Lite
+    * TFX
+  Resources
+    * Models_&_datasets
+      Pre-trained_models_and_datasets_built_by_Google_and_the_community
+    * Tools
+      Ecosystem_of_tools_to_help_you_use_TensorFlow
+    * Libraries_&_extensions
+      Libraries_and_extensions_built_on_TensorFlow
+    * TensorFlow_Certificate_program
+      Differentiate_yourself_by_demonstrating_your_ML_proficiency
+    * Learn_ML
+      Educational_resources_to_learn_the_fundamentals_of_ML_with_TensorFlow
+    * Responsible_AI
+      Resources_and_tools_to_integrate_Responsible_AI_practices_into_your_ML
+      workflow
+  Community
+    * Join
+      Explore_ways_to_get_involved
+    * Blog
+      Stay_up_to_date_with_all_things_TensorFlow
+    * Forum_â
+      Discussion_platform_for_the_TensorFlow_community
+    * Groups
+      User_groups,_interest_groups_and_mailing_lists
+    * Contribute
+      Guide_for_contributing_to_code_and_documentation
+  Why_TensorFlow
+    * About
+    * Case_studies
+
+[q                   ]
+
+    * English
+    * Bahasa Indonesia
+    * EspaÃ±ol â AmÃ©rica Latina
+    * FranÃ§ais
+    * Italiano
+    * Polski
+    * PortuguÃªs â Brasil
+    * TiÃªÌng ViÃªÌ£t
+    * TÃ¼rkÃ§e
+    * Ð ÑÑÑÐºÐ¸Ð¹
+    * ×¢××¨××ª
+    * Ø§ÙØ¹Ø±Ø¨ÙÙØ©
+    * ÙØ§Ø±Ø³Û
+    * à¤¹à¤¿à¤à¤¦à¥
+    * à¦¬à¦¾à¦à¦²à¦¾
+    * à¸ à¸²à¸©à¸²à¹à¸à¸¢
+    * ä¸­æ â ç®ä½
+    * æ¥æ¬èª
+    * íêµ­ì´
+ GitHub  Sign in
+    * TensorFlow_Core
+   Overview   Tutorials   Guide   Migrate_to_TF2   TF_1_â
+
+[                    ]
+
+[TensorFlow]
+    * _Install___
+    * _Learn_
+          o   More
+          o _Overview_
+          o _Tutorials___
+          o _Guide___
+          o _Migrate_to_TF2___
+          o _TF_1_â_
+    * _API_
+          o   More
+    * _Resources_
+          o   More
+    * _Community_
+          o   More
+    * _Why_TensorFlow_
+          o   More
+    * _GitHub_
+    * TensorFlow_tutorials
+    * Quickstart_for_beginners
+    * Quickstart_for_experts
+    * Beginner
+    * ML basics with Keras
+          o Basic_image_classification
+          o Basic_text_classification
+          o Text_classification_with_TF_Hub
+          o Regression
+          o Overfit_and_underfit
+          o Save_and_load
+          o Tune_hyperparameters_with_the_Keras_Tuner
+          o More_examples_on_keras.io
+    * Load and preprocess data
+          o Images
+          o Video
+          o CSV
+          o NumPy
+          o pandas.DataFrame
+          o TFRecord_and_tf.Example
+          o Additional_formats_with_tf.io
+          o Text
+          o More text loading
+          o Unicode
+          o Subword_Tokenization
+    * Advanced
+    * Customization
+          o Tensors_and_operations
+          o Custom_layers
+          o Custom_training:_walkthrough
+    * Distributed training
+          o Distributed_training_with_Keras
+          o Distributed_training_with_DTensors
+          o Using_DTensors_with_Keras
+          o Custom_training_loops
+          o Multi-worker_training_with_Keras
+          o Multi-worker_training_with_CTL
+          o Parameter_Server_Training
+          o Save_and_load
+          o Distributed_input
+    * Vision
+          o Computer_vision
+          o KerasCV
+          o Convolutional_Neural_Network
+          o Image_classification
+          o Transfer_learning_and_fine-tuning
+          o Transfer_learning_with_TF_Hub
+          o Data_Augmentation
+          o Image_segmentation
+          o Object_detection_with_TF_Hub
+          o Video_classification
+          o Transfer_learning_with_MoViNet
+    * Text
+          o Text_and_natural_language_processing
+          o Get_started_with_KerasNLP
+          o Text_and_NLP_guide
+    * Audio
+          o Simple_audio_recognition
+          o Transfer_learning_for_audio_recognition
+          o Generate_music_with_an_RNN
+    * Structured data
+          o Classify_structured_data_with_preprocessing_layers
+          o Classification_on_imbalanced_data
+          o Time_series_forecasting
+          o Decision_forest_models
+          o Recommenders
+    * Generative
+          o Stable_Diffusion
+          o Neural_style_transfer
+          o DeepDream
+          o DCGAN
+          o Pix2Pix
+          o CycleGAN
+          o Adversarial_FGSM
+          o Intro_to_Autoencoders
+          o Variational_Autoencoder
+          o Lossy_data_compression
+    * Model optimization
+          o Scalable_model_compression_with_EPR
+          o TensorFlow_model_optimization
+    * Model Understanding
+          o Integrated_gradients
+          o Uncertainty_quantification_with_SNGP
+          o Probabilistic_regression
+    * Reinforcement learning
+          o Actor-Critic_method
+          o TensorFlow_agents
+    * tf.Estimator
+          o Premade_estimator
+          o Linear_model
+          o Keras_model_to_Estimator
+          o Multi-worker_training_with_Estimator
+          o Feature_columns
+    * _Introduction_
+    * _TensorFlow_
+    * _For_JavaScript_
+    * _For_Mobile_&_Edge_
+    * _For_Production_
+    * _TensorFlow_(v2.13.0)_
+    * _Versionsâ¦_
+    * _TensorFlow.js_
+    * _TensorFlow_Lite_
+    * _TFX_
+    * _Models_&_datasets_
+    * _Tools_
+    * _Libraries_&_extensions_
+    * _TensorFlow_Certificate_program_
+    * _Learn_ML_
+    * _Responsible_AI_
+    * _Join_
+    * _Blog_
+    * _Forum_â_
+    * _Groups_
+    * _Contribute_
+    * _About_
+    * _Case_studies_
+
+
+Try out Googleâs large language models using the PaLM API and
+MakerSuiteExplore_Generative_AI
+    * TensorFlow
+    * Learn
+    * TensorFlow_Core
+    * Tutorials
+
+****** Image classification ******
+  Stay organized with collections   Save and categorize content based on your
+preferences.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+This tutorial shows how to classify images of flowers using a
+tf.keras.Sequential model and load data using
+tf.keras.utils.image_dataset_from_directory. It demonstrates the following
+concepts:
+    * Efficiently loading a dataset off disk.
+    * Identifying overfitting and applying techniques to mitigate it, including
+      data augmentation and dropout.
+This tutorial follows a basic machine learning workflow:
+   1. Examine and understand data
+   2. Build an input pipeline
+   3. Build the model
+   4. Train the model
+   5. Test the model
+   6. Improve the model and repeat the process
+In addition, the notebook demonstrates how to convert a saved_model to a
+TensorFlow_Lite model for on-device machine learning on mobile, embedded, and
+IoT devices.
+***** Setup *****
+Import TensorFlow and other necessary libraries:
+import matplotlib.pyplot as plt
+import numpy as np
+import PIL
+import tensorflow as tf
+
+from tensorflow import keras
+from tensorflow.keras import layers
+from tensorflow.keras.models import Sequential
+***** Download and explore the dataset *****
+This tutorial uses a dataset of about 3,700 photos of flowers. The dataset
+contains five sub-directories, one per class:
+flower_photo/
+  daisy/
+  dandelion/
+  roses/
+  sunflowers/
+  tulips/
+import pathlib
+
+dataset_url = "https://storage.googleapis.com/download.tensorflow.org/
+example_images/flower_photos.tgz"
+data_dir = tf.keras.utils.get_file('flower_photos.tar', origin=dataset_url,
+extract=True)
+data_dir = pathlib.Path(data_dir).with_suffix('')
+Downloading data from https&colon;//storage.googleapis.com/
+download.tensorflow.org/example_images/flower_photos.tgz
+228813984/228813984 [==============================] - 1s 0us/step
+After downloading, you should now have a copy of the dataset available. There
+are 3,670 total images:
+image_count = len(list(data_dir.glob('*/*.jpg')))
+print(image_count)
+3670
+Here are some roses:
+roses = list(data_dir.glob('roses/*'))
+PIL.Image.open(str(roses[0]))
+[png]
+PIL.Image.open(str(roses[1]))
+[png]
+And some tulips:
+tulips = list(data_dir.glob('tulips/*'))
+PIL.Image.open(str(tulips[0]))
+[png]
+PIL.Image.open(str(tulips[1]))
+[png]
+***** Load data using a Keras utility *****
+Next, load these images off disk using the helpful
+tf.keras.utils.image_dataset_from_directory utility. This will take you from a
+directory of images on disk to a tf.data.Dataset in just a couple lines of
+code. If you like, you can also write your own data loading code from scratch
+by visiting the Load_and_preprocess_images tutorial.
+**** Create a dataset ****
+Define some parameters for the loader:
+batch_size = 32
+img_height = 180
+img_width = 180
+It's good practice to use a validation split when developing your model. Use
+80% of the images for training and 20% for validation.
+train_ds = tf.keras.utils.image_dataset_from_directory(
+  data_dir,
+  validation_split=0.2,
+  subset="training",
+  seed=123,
+  image_size=(img_height, img_width),
+  batch_size=batch_size)
+Found 3670 files belonging to 5 classes.
+Using 2936 files for training.
+val_ds = tf.keras.utils.image_dataset_from_directory(
+  data_dir,
+  validation_split=0.2,
+  subset="validation",
+  seed=123,
+  image_size=(img_height, img_width),
+  batch_size=batch_size)
+Found 3670 files belonging to 5 classes.
+Using 734 files for validation.
+You can find the class names in the class_names attribute on these datasets.
+These correspond to the directory names in alphabetical order.
+class_names = train_ds.class_names
+print(class_names)
+[&#x27;daisy&#x27;, &#x27;dandelion&#x27;, &#x27;roses&#x27;,
+&#x27;sunflowers&#x27;, &#x27;tulips&#x27;]
+***** Visualize the data *****
+Here are the first nine images from the training dataset:
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 10))
+for images, labels in train_ds.take(1):
+  for i in range(9):
+    ax = plt.subplot(3, 3, i + 1)
+    plt.imshow(images[i].numpy().astype("uint8"))
+    plt.title(class_names[labels[i]])
+    plt.axis("off")
+[png]
+You will pass these datasets to the Keras Model.fit method for training later
+in this tutorial. If you like, you can also manually iterate over the dataset
+and retrieve batches of images:
+for image_batch, labels_batch in train_ds:
+  print(image_batch.shape)
+  print(labels_batch.shape)
+  break
+(32, 180, 180, 3)
+(32,)
+The image_batch is a tensor of the shape (32, 180, 180, 3). This is a batch of
+32 images of shape 180x180x3 (the last dimension refers to color channels RGB).
+The label_batch is a tensor of the shape (32,), these are corresponding labels
+to the 32 images.
+You can call .numpy() on the image_batch and labels_batch tensors to convert
+them to a numpy.ndarray.
+***** Configure the dataset for performance *****
+Make sure to use buffered prefetching, so you can yield data from disk without
+having I/O become blocking. These are two important methods you should use when
+loading data:
+    * Dataset.cache keeps the images in memory after they're loaded off disk
+      during the first epoch. This will ensure the dataset does not become a
+      bottleneck while training your model. If your dataset is too large to fit
+      into memory, you can also use this method to create a performant on-disk
+      cache.
+    * Dataset.prefetch overlaps data preprocessing and model execution while
+      training.
+Interested readers can learn more about both methods, as well as how to cache
+data to disk in the Prefetching section of the Better_performance_with_the
+tf.data_API guide.
+AUTOTUNE = tf.data.AUTOTUNE
+
+train_ds = train_ds.cache().shuffle(1000).prefetch(buffer_size=AUTOTUNE)
+val_ds = val_ds.cache().prefetch(buffer_size=AUTOTUNE)
+***** Standardize the data *****
+The RGB channel values are in the [0, 255] range. This is not ideal for a
+neural network; in general you should seek to make your input values small.
+Here, you will standardize values to be in the [0, 1] range by using
+tf.keras.layers.Rescaling:
+normalization_layer = layers.Rescaling(1./255)
+There are two ways to use this layer. You can apply it to the dataset by
+calling Dataset.map:
+normalized_ds = train_ds.map(lambda x, y: (normalization_layer(x), y))
+image_batch, labels_batch = next(iter(normalized_ds))
+first_image = image_batch[0]
+# Notice the pixel values are now in `[0,1]`.
+print(np.min(first_image), np.max(first_image))
+0.0 0.96902645
+Or, you can include the layer inside your model definition, which can simplify
+deployment. Use the second approach here.
+Note: You previously resized images using the image_size argument of
+tf.keras.utils.image_dataset_from_directory. If you want to include the
+resizing logic in your model as well, you can use the tf.keras.layers.Resizing
+layer.
+***** A basic Keras model *****
+**** Create the model ****
+The Keras Sequential model consists of three convolution blocks
+(tf.keras.layers.Conv2D) with a max pooling layer
+(tf.keras.layers.MaxPooling2D) in each of them. There's a fully-connected layer
+(tf.keras.layers.Dense) with 128 units on top of it that is activated by a ReLU
+activation function ('relu'). This model has not been tuned for high accuracy;
+the goal of this tutorial is to show a standard approach.
+num_classes = len(class_names)
+
+model = Sequential([
+  layers.Rescaling(1./255, input_shape=(img_height, img_width, 3)),
+  layers.Conv2D(16, 3, padding='same', activation='relu'),
+  layers.MaxPooling2D(),
+  layers.Conv2D(32, 3, padding='same', activation='relu'),
+  layers.MaxPooling2D(),
+  layers.Conv2D(64, 3, padding='same', activation='relu'),
+  layers.MaxPooling2D(),
+  layers.Flatten(),
+  layers.Dense(128, activation='relu'),
+  layers.Dense(num_classes)
+])
+**** Compile the model ****
+For this tutorial, choose the tf.keras.optimizers.Adam optimizer and
+tf.keras.losses.SparseCategoricalCrossentropy loss function. To view training
+and validation accuracy for each training epoch, pass the metrics argument to
+Model.compile.
+model.compile(optimizer='adam',
+              loss=tf.keras.losses.SparseCategoricalCrossentropy
+(from_logits=True),
+              metrics=['accuracy'])
+**** Model summary ****
+View all the layers of the network using the Keras Model.summary method:
+model.summary()
+Model&colon; "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ rescaling_1 (Rescaling)     (None, 180, 180, 3)       0
+
+ conv2d (Conv2D)             (None, 180, 180, 16)      448
+
+ max_pooling2d (MaxPooling2  (None, 90, 90, 16)        0
+ D)
+
+ conv2d_1 (Conv2D)           (None, 90, 90, 32)        4640
+
+ max_pooling2d_1 (MaxPoolin  (None, 45, 45, 32)        0
+ g2D)
+
+ conv2d_2 (Conv2D)           (None, 45, 45, 64)        18496
+
+ max_pooling2d_2 (MaxPoolin  (None, 22, 22, 64)        0
+ g2D)
+
+ flatten (Flatten)           (None, 30976)             0
+
+ dense (Dense)               (None, 128)               3965056
+
+ dense_1 (Dense)             (None, 5)                 645
+
+=================================================================
+Total params&colon; 3989285 (15.22 MB)
+Trainable params&colon; 3989285 (15.22 MB)
+Non-trainable params&colon; 0 (0.00 Byte)
+_________________________________________________________________
+**** Train the model ****
+Train the model for 10 epochs with the Keras Model.fit method:
+epochs=10
+history = model.fit(
+  train_ds,
+  validation_data=val_ds,
+  epochs=epochs
+)
+Epoch 1/10
+92/92 [==============================] - 6s 21ms/step - loss&colon; 1.4917 -
+accuracy&colon; 0.3644 - val_loss&colon; 1.1232 - val_accuracy&colon; 0.5409
+Epoch 2/10
+92/92 [==============================] - 1s 15ms/step - loss&colon; 1.0611 -
+accuracy&colon; 0.5743 - val_loss&colon; 1.0191 - val_accuracy&colon; 0.5858
+Epoch 3/10
+92/92 [==============================] - 1s 15ms/step - loss&colon; 0.8832 -
+accuracy&colon; 0.6686 - val_loss&colon; 1.0277 - val_accuracy&colon; 0.5736
+Epoch 4/10
+92/92 [==============================] - 1s 15ms/step - loss&colon; 0.6891 -
+accuracy&colon; 0.7493 - val_loss&colon; 0.9515 - val_accuracy&colon; 0.6335
+Epoch 5/10
+92/92 [==============================] - 1s 15ms/step - loss&colon; 0.4928 -
+accuracy&colon; 0.8208 - val_loss&colon; 0.9375 - val_accuracy&colon; 0.6717
+Epoch 6/10
+92/92 [==============================] - 1s 15ms/step - loss&colon; 0.3269 -
+accuracy&colon; 0.8907 - val_loss&colon; 1.0892 - val_accuracy&colon; 0.6131
+Epoch 7/10
+92/92 [==============================] - 1s 15ms/step - loss&colon; 0.1947 -
+accuracy&colon; 0.9390 - val_loss&colon; 1.3664 - val_accuracy&colon; 0.6431
+Epoch 8/10
+92/92 [==============================] - 1s 15ms/step - loss&colon; 0.0929 -
+accuracy&colon; 0.9772 - val_loss&colon; 1.5312 - val_accuracy&colon; 0.6172
+Epoch 9/10
+92/92 [==============================] - 1s 15ms/step - loss&colon; 0.0480 -
+accuracy&colon; 0.9898 - val_loss&colon; 1.7783 - val_accuracy&colon; 0.6608
+Epoch 10/10
+92/92 [==============================] - 1s 15ms/step - loss&colon; 0.0384 -
+accuracy&colon; 0.9915 - val_loss&colon; 2.2906 - val_accuracy&colon; 0.6281
+***** Visualize training results *****
+Create plots of the loss and accuracy on the training and validation sets:
+acc = history.history['accuracy']
+val_acc = history.history['val_accuracy']
+
+loss = history.history['loss']
+val_loss = history.history['val_loss']
+
+epochs_range = range(epochs)
+
+plt.figure(figsize=(8, 8))
+plt.subplot(1, 2, 1)
+plt.plot(epochs_range, acc, label='Training Accuracy')
+plt.plot(epochs_range, val_acc, label='Validation Accuracy')
+plt.legend(loc='lower right')
+plt.title('Training and Validation Accuracy')
+
+plt.subplot(1, 2, 2)
+plt.plot(epochs_range, loss, label='Training Loss')
+plt.plot(epochs_range, val_loss, label='Validation Loss')
+plt.legend(loc='upper right')
+plt.title('Training and Validation Loss')
+plt.show()
+[png]
+The plots show that training accuracy and validation accuracy are off by large
+margins, and the model has achieved only around 60% accuracy on the validation
+set.
+The following tutorial sections show how to inspect what went wrong and try to
+increase the overall performance of the model.
+***** Overfitting *****
+In the plots above, the training accuracy is increasing linearly over time,
+whereas validation accuracy stalls around 60% in the training process. Also,
+the difference in accuracy between training and validation accuracy is
+noticeableâa sign of overfitting.
+When there are a small number of training examples, the model sometimes learns
+from noises or unwanted details from training examplesâto an extent that it
+negatively impacts the performance of the model on new examples. This
+phenomenon is known as overfitting. It means that the model will have a
+difficult time generalizing on a new dataset.
+There are multiple ways to fight overfitting in the training process. In this
+tutorial, you'll use data augmentation and add dropout to your model.
+***** Data augmentation *****
+Overfitting generally occurs when there are a small number of training
+examples. Data_augmentation takes the approach of generating additional
+training data from your existing examples by augmenting them using random
+transformations that yield believable-looking images. This helps expose the
+model to more aspects of the data and generalize better.
+You will implement data augmentation using the following Keras preprocessing
+layers: tf.keras.layers.RandomFlip, tf.keras.layers.RandomRotation, and
+tf.keras.layers.RandomZoom. These can be included inside your model like other
+layers, and run on the GPU.
+data_augmentation = keras.Sequential(
+  [
+    layers.RandomFlip("horizontal",
+                      input_shape=(img_height,
+                                  img_width,
+                                  3)),
+    layers.RandomRotation(0.1),
+    layers.RandomZoom(0.1),
+  ]
+)
+Visualize a few augmented examples by applying data augmentation to the same
+image several times:
+plt.figure(figsize=(10, 10))
+for images, _ in train_ds.take(1):
+  for i in range(9):
+    augmented_images = data_augmentation(images)
+    ax = plt.subplot(3, 3, i + 1)
+    plt.imshow(augmented_images[0].numpy().astype("uint8"))
+    plt.axis("off")
+[png]
+You will add data augmentation to your model before training in the next step.
+***** Dropout *****
+Another technique to reduce overfitting is to introduce dropout regularization
+to the network.
+When you apply dropout to a layer, it randomly drops out (by setting the
+activation to zero) a number of output units from the layer during the training
+process. Dropout takes a fractional number as its input value, in the form such
+as 0.1, 0.2, 0.4, etc. This means dropping out 10%, 20% or 40% of the output
+units randomly from the applied layer.
+Create a new neural network with tf.keras.layers.Dropout before training it
+using the augmented images:
+model = Sequential([
+  data_augmentation,
+  layers.Rescaling(1./255),
+  layers.Conv2D(16, 3, padding='same', activation='relu'),
+  layers.MaxPooling2D(),
+  layers.Conv2D(32, 3, padding='same', activation='relu'),
+  layers.MaxPooling2D(),
+  layers.Conv2D(64, 3, padding='same', activation='relu'),
+  layers.MaxPooling2D(),
+  layers.Dropout(0.2),
+  layers.Flatten(),
+  layers.Dense(128, activation='relu'),
+  layers.Dense(num_classes, name="outputs")
+])
+***** Compile and train the model *****
+model.compile(optimizer='adam',
+              loss=tf.keras.losses.SparseCategoricalCrossentropy
+(from_logits=True),
+              metrics=['accuracy'])
+model.summary()
+Model&colon; "sequential_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ sequential_1 (Sequential)   (None, 180, 180, 3)       0
+
+ rescaling_2 (Rescaling)     (None, 180, 180, 3)       0
+
+ conv2d_3 (Conv2D)           (None, 180, 180, 16)      448
+
+ max_pooling2d_3 (MaxPoolin  (None, 90, 90, 16)        0
+ g2D)
+
+ conv2d_4 (Conv2D)           (None, 90, 90, 32)        4640
+
+ max_pooling2d_4 (MaxPoolin  (None, 45, 45, 32)        0
+ g2D)
+
+ conv2d_5 (Conv2D)           (None, 45, 45, 64)        18496
+
+ max_pooling2d_5 (MaxPoolin  (None, 22, 22, 64)        0
+ g2D)
+
+ dropout (Dropout)           (None, 22, 22, 64)        0
+
+ flatten_1 (Flatten)         (None, 30976)             0
+
+ dense_2 (Dense)             (None, 128)               3965056
+
+ outputs (Dense)             (None, 5)                 645
+
+=================================================================
+Total params&colon; 3989285 (15.22 MB)
+Trainable params&colon; 3989285 (15.22 MB)
+Non-trainable params&colon; 0 (0.00 Byte)
+_________________________________________________________________
+epochs = 15
+history = model.fit(
+  train_ds,
+  validation_data=val_ds,
+  epochs=epochs
+)
+Epoch 1/15
+2023-07-27 06&colon;06&colon;59.864648&colon; E tensorflow/core/grappler/
+optimizers/meta_optimizer.cc&colon;954] layout failed&colon;
+INVALID_ARGUMENT&colon; Size of values 0 does not match size of permutation 4 @
+fanin shape insequential_2/dropout/dropout/SelectV2-2-TransposeNHWCToNCHW-
+LayoutOptimizer
+92/92 [==============================] - 4s 22ms/step - loss&colon; 1.2639 -
+accuracy&colon; 0.4625 - val_loss&colon; 1.1142 - val_accuracy&colon; 0.5463
+Epoch 2/15
+92/92 [==============================] - 2s 21ms/step - loss&colon; 0.9987 -
+accuracy&colon; 0.6059 - val_loss&colon; 1.0628 - val_accuracy&colon; 0.5817
+Epoch 3/15
+92/92 [==============================] - 2s 21ms/step - loss&colon; 0.9178 -
+accuracy&colon; 0.6407 - val_loss&colon; 0.8788 - val_accuracy&colon; 0.6376
+Epoch 4/15
+92/92 [==============================] - 2s 21ms/step - loss&colon; 0.8688 -
+accuracy&colon; 0.6557 - val_loss&colon; 0.8225 - val_accuracy&colon; 0.6730
+Epoch 5/15
+92/92 [==============================] - 2s 21ms/step - loss&colon; 0.8004 -
+accuracy&colon; 0.6907 - val_loss&colon; 0.7736 - val_accuracy&colon; 0.6935
+Epoch 6/15
+92/92 [==============================] - 2s 21ms/step - loss&colon; 0.7654 -
+accuracy&colon; 0.7033 - val_loss&colon; 0.8150 - val_accuracy&colon; 0.6880
+Epoch 7/15
+92/92 [==============================] - 2s 21ms/step - loss&colon; 0.7564 -
+accuracy&colon; 0.7091 - val_loss&colon; 0.8144 - val_accuracy&colon; 0.6826
+Epoch 8/15
+92/92 [==============================] - 2s 21ms/step - loss&colon; 0.6899 -
+accuracy&colon; 0.7388 - val_loss&colon; 0.7152 - val_accuracy&colon; 0.7193
+Epoch 9/15
+92/92 [==============================] - 2s 21ms/step - loss&colon; 0.6624 -
+accuracy&colon; 0.7463 - val_loss&colon; 0.7008 - val_accuracy&colon; 0.7234
+Epoch 10/15
+92/92 [==============================] - 2s 21ms/step - loss&colon; 0.6243 -
+accuracy&colon; 0.7599 - val_loss&colon; 0.7120 - val_accuracy&colon; 0.7084
+Epoch 11/15
+92/92 [==============================] - 2s 21ms/step - loss&colon; 0.6410 -
+accuracy&colon; 0.7534 - val_loss&colon; 0.6971 - val_accuracy&colon; 0.7207
+Epoch 12/15
+92/92 [==============================] - 2s 21ms/step - loss&colon; 0.5785 -
+accuracy&colon; 0.7732 - val_loss&colon; 0.6794 - val_accuracy&colon; 0.7384
+Epoch 13/15
+92/92 [==============================] - 2s 21ms/step - loss&colon; 0.5452 -
+accuracy&colon; 0.7960 - val_loss&colon; 0.7272 - val_accuracy&colon; 0.7193
+Epoch 14/15
+92/92 [==============================] - 2s 21ms/step - loss&colon; 0.5284 -
+accuracy&colon; 0.7950 - val_loss&colon; 0.6846 - val_accuracy&colon; 0.7507
+Epoch 15/15
+92/92 [==============================] - 2s 21ms/step - loss&colon; 0.5105 -
+accuracy&colon; 0.8065 - val_loss&colon; 0.7204 - val_accuracy&colon; 0.7248
+***** Visualize training results *****
+After applying data augmentation and tf.keras.layers.Dropout, there is less
+overfitting than before, and training and validation accuracy are closer
+aligned:
+acc = history.history['accuracy']
+val_acc = history.history['val_accuracy']
+
+loss = history.history['loss']
+val_loss = history.history['val_loss']
+
+epochs_range = range(epochs)
+
+plt.figure(figsize=(8, 8))
+plt.subplot(1, 2, 1)
+plt.plot(epochs_range, acc, label='Training Accuracy')
+plt.plot(epochs_range, val_acc, label='Validation Accuracy')
+plt.legend(loc='lower right')
+plt.title('Training and Validation Accuracy')
+
+plt.subplot(1, 2, 2)
+plt.plot(epochs_range, loss, label='Training Loss')
+plt.plot(epochs_range, val_loss, label='Validation Loss')
+plt.legend(loc='upper right')
+plt.title('Training and Validation Loss')
+plt.show()
+[png]
+***** Predict on new data *****
+Use your model to classify an image that wasn't included in the training or
+validation sets.
+Note: Data augmentation and dropout layers are inactive at inference time.
+sunflower_url = "https://storage.googleapis.com/download.tensorflow.org/
+example_images/592px-Red_sunflower.jpg"
+sunflower_path = tf.keras.utils.get_file('Red_sunflower', origin=sunflower_url)
+
+img = tf.keras.utils.load_img(
+    sunflower_path, target_size=(img_height, img_width)
+)
+img_array = tf.keras.utils.img_to_array(img)
+img_array = tf.expand_dims(img_array, 0) # Create a batch
+
+predictions = model.predict(img_array)
+score = tf.nn.softmax(predictions[0])
+
+print(
+    "This image most likely belongs to {} with a {:.2f} percent confidence."
+    .format(class_names[np.argmax(score)], 100 * np.max(score))
+)
+Downloading data from https&colon;//storage.googleapis.com/
+download.tensorflow.org/example_images/592px-Red_sunflower.jpg
+117948/117948 [==============================] - 0s 0us/step
+1/1 [==============================] - 0s 132ms/step
+This image most likely belongs to sunflowers with a 65.93 percent confidence.
+***** Use TensorFlow Lite *****
+TensorFlow Lite is a set of tools that enables on-device machine learning by
+helping developers run their models on mobile, embedded, and edge devices.
+**** Convert the Keras Sequential model to a TensorFlow Lite model ****
+To use the trained model with on-device applications, first convert_it to a
+smaller and more efficient model format called a TensorFlow_Lite model.
+In this example, take the trained Keras Sequential model and use
+tf.lite.TFLiteConverter.from_keras_model to generate a TensorFlow_Lite model:
+# Convert the model.
+converter = tf.lite.TFLiteConverter.from_keras_model(model)
+tflite_model = converter.convert()
+
+# Save the model.
+with open('model.tflite', 'wb') as f:
+  f.write(tflite_model)
+INFO&colon;tensorflow&colon;Assets written to&colon; /tmpfs/tmp/tmp1ci_e189/
+assets
+INFO&colon;tensorflow&colon;Assets written to&colon; /tmpfs/tmp/tmp1ci_e189/
+assets
+2023-07-27 06&colon;07&colon;32.903869&colon; W tensorflow/compiler/mlir/lite/
+python/tf_tfl_flatbuffer_helpers.cc&colon;364] Ignored output_format.
+2023-07-27 06&colon;07&colon;32.903908&colon; W tensorflow/compiler/mlir/lite/
+python/tf_tfl_flatbuffer_helpers.cc&colon;367] Ignored drop_control_dependency.
+The TensorFlow Lite model you saved in the previous step can contain several
+function signatures. The Keras model converter API uses the default signature
+automatically. Learn more about TensorFlow_Lite_signatures.
+**** Run the TensorFlow Lite model ****
+You can access the TensorFlow Lite saved model signatures in Python via the
+tf.lite.Interpreter class.
+Load the model with the Interpreter:
+TF_MODEL_FILE_PATH = 'model.tflite' # The default path to the saved TensorFlow
+Lite model
+
+interpreter = tf.lite.Interpreter(model_path=TF_MODEL_FILE_PATH)
+Print the signatures from the converted model to obtain the names of the inputs
+(and outputs):
+interpreter.get_signature_list()
+{&#x27;serving_default&#x27;&colon; {&#x27;inputs&#x27;&colon;
+[&#x27;sequential_1_input&#x27;], &#x27;outputs&#x27;&colon;
+[&#x27;outputs&#x27;]} }
+In this example, you have one default signature called serving_default. In
+addition, the name of the 'inputs' is 'sequential_1_input', while the 'outputs'
+are called 'outputs'. You can look up these first and last Keras layer names
+when running Model.summary, as demonstrated earlier in this tutorial.
+Now you can test the loaded TensorFlow Model by performing inference on a
+sample image with tf.lite.Interpreter.get_signature_runner by passing the
+signature name as follows:
+classify_lite = interpreter.get_signature_runner('serving_default')
+classify_lite
+<tensorflow.lite.python.interpreter.SignatureRunner at 0x7fcc74107190>
+Similar to what you did earlier in the tutorial, you can use the TensorFlow
+Lite model to classify images that weren't included in the training or
+validation sets.
+You have already tensorized that image and saved it as img_array. Now, pass it
+to the first argument (the name of the 'inputs') of the loaded TensorFlow Lite
+model (predictions_lite), compute softmax activations, and then print the
+prediction for the class with the highest computed probability.
+predictions_lite = classify_lite(sequential_1_input=img_array)['outputs']
+score_lite = tf.nn.softmax(predictions_lite)
+print(
+    "This image most likely belongs to {} with a {:.2f} percent confidence."
+    .format(class_names[np.argmax(score_lite)], 100 * np.max(score_lite))
+)
+This image most likely belongs to sunflowers with a 65.93 percent confidence.
+The prediction generated by the lite model should be almost identical to the
+predictions generated by the original model:
+print(np.max(np.abs(predictions - predictions_lite)))
+2.1457672e-06
+Of the five classesâ'daisy', 'dandelion', 'roses', 'sunflowers', and
+'tulips'âthe model should predict the image belongs to sunflowers, which is
+the same result as before the TensorFlow Lite conversion.
+***** Next steps *****
+This tutorial showed how to train a model for image classification, test it,
+convert it to the TensorFlow Lite format for on-device applications (such as an
+image classification app), and perform inference with the TensorFlow Lite model
+with the Python API.
+You can learn more about TensorFlow Lite through tutorials and guides.
+
+Except as otherwise noted, the content of this page is licensed under the
+Creative_Commons_Attribution_4.0_License, and code samples are licensed under
+the Apache_2.0_License. For details, see the Google_Developers_Site_Policies.
+Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2023-07-27 UTC.
+
+ [{ "type": "thumb-down", "id": "missingTheInformationINeed", "label":"Missing
+the information I need" },{ "type": "thumb-down", "id":
+"tooComplicatedTooManySteps", "label":"Too complicated / too many steps" },
+{ "type": "thumb-down", "id": "outOfDate", "label":"Out of date" },{ "type":
+"thumb-down", "id": "samplesCodeIssue", "label":"Samples / code issue" },
+{ "type": "thumb-down", "id": "otherDown", "label":"Other" }]   [{ "type":
+"thumb-up", "id": "easyToUnderstand", "label":"Easy to understand" },{ "type":
+"thumb-up", "id": "solvedMyProblem", "label":"Solved my problem" },{ "type":
+"thumb-up", "id": "otherUp", "label":"Other" }]
+
+    * **** Stay connected ****
+          o Blog
+          o Forum
+          o GitHub
+          o Twitter
+          o YouTube
+    * **** Support ****
+          o Issue_tracker
+          o Release_notes
+          o Stack_Overflow
+          o Brand_guidelines
+          o Cite_TensorFlow
+
+    * Terms
+    * Privacy
+    * Sign up for the TensorFlow newsletter Subscribe
+    * English
+    * Bahasa Indonesia
+    * EspaÃ±ol â AmÃ©rica Latina
+    * FranÃ§ais
+    * Italiano
+    * Polski
+    * PortuguÃªs â Brasil
+    * TiÃªÌng ViÃªÌ£t
+    * TÃ¼rkÃ§e
+    * Ð ÑÑÑÐºÐ¸Ð¹
+    * ×¢××¨××ª
+    * Ø§ÙØ¹Ø±Ø¨ÙÙØ©
+    * ÙØ§Ø±Ø³Û
+    * à¤¹à¤¿à¤à¤¦à¥
+    * à¦¬à¦¾à¦à¦²à¦¾
+    * à¸ à¸²à¸©à¸²à¹à¸à¸¢
+    * ä¸­æ â ç®ä½
+    * æ¥æ¬èª
+    * íêµ­ì´
+
+
+
+

@@ -28,36 +28,36 @@ function reflectPreference() {
   document.querySelector("#theme-btn")?.setAttribute("aria-label", themeValue);
 
   // see css code in /src/styles/base.css
-  const lightInput = "lightInput";
-  const lightLabel = "lightLabel";
-  const darkInput = "darkInput";
-  const darkLabel = "darkLabel";
+  // const lightInput = "lightInput";
+  // const lightLabel = "lightLabel";
+  // const darkInput = "darkInput";
+  // const darkLabel = "darkLabel";
 
-  if (themeValue == "light") {
-    ".label .input .textarea".split(" ").forEach(j => {
-      document.querySelectorAll(j).forEach(e => {
-        if (j == ".label") {
-          e.classList.remove(darkLabel);
-          e.classList.add(lightLabel);
-        } else {
-          e.classList.remove(darkInput);
-          e.classList.add(lightInput);
-        }
-      });
-    });
-  } else {
-    ".label .input .textarea".split(" ").forEach(j => {
-      document.querySelectorAll(j).forEach(e => {
-        if (j == ".label") {
-          e.classList.add(darkLabel);
-          e.classList.remove(lightLabel);
-        } else {
-          e.classList.add(darkInput);
-          e.classList.remove(lightInput);
-        }
-      });
-    });
-  }
+  // if (themeValue == "light") {
+  //   ".label .input .textarea".split(" ").forEach(j => {
+  //     document.querySelectorAll(j).forEach(e => {
+  //       if (j == ".label") {
+  //         e.classList.remove(darkLabel);
+  //         e.classList.add(lightLabel);
+  //       } else {
+  //         e.classList.remove(darkInput);
+  //         e.classList.add(lightInput);
+  //       }
+  //     });
+  //   });
+  // } else {
+  //   ".label .input .textarea".split(" ").forEach(j => {
+  //     document.querySelectorAll(j).forEach(e => {
+  //       if (j == ".label") {
+  //         e.classList.add(darkLabel);
+  //         e.classList.remove(lightLabel);
+  //       } else {
+  //         e.classList.add(darkInput);
+  //         e.classList.remove(lightInput);
+  //       }
+  //     });
+  //   });
+  // }
 }
 
 // set early so no page flashes / CSS is made aware

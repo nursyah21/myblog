@@ -125,6 +125,30 @@
     white-space: pre;
     overflow: scroll;
   }
+
+  pre {
+    border-width: 1px;
+    padding: 8px 16px;
+    overflow: auto;
+    border-radius: 4px;
+    /* background: #343434; */
+  }
+  code {
+    padding: 4px;
+    border-radius: 4px;
+    /* background: #343434; */
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    direction: ltr;
+    font-size: 14px;
+  }
+  pre > code {
+    padding: 0;
+    line-height: 1.5;
+    word-break: normal;
+    white-space: pre;
+    word-spacing: normal;
+    tab-size: 4;
+  }
 }
 
 @layer components {
@@ -135,5 +159,38 @@
   .focus-outline {
     @apply outline-2 outline-offset-1 outline-skin-fill focus-visible:no-underline focus-visible:outline-dashed;
   }
+
+  html[data-theme="light"] .label{
+    @apply text-gray-700;
+  }
+
+  html[data-theme="dark"] .label{
+    @apply text-gray-200;
+  }
+
+  html[data-theme="light"] .input{
+    @apply text-gray-700 bg-white border-gray-200 focus:border-blue-400;
+  }
+
+  html[data-theme="dark"] .input{
+    @apply bg-gray-800 text-gray-300 border-gray-600 focus:border-blue-300;
+  }
+
+  html[data-theme="light"] .textarea{
+    @apply text-gray-700 bg-white border-gray-200 focus:border-blue-400;
+  }
+
+  html[data-theme="dark"] .textarea{
+    @apply bg-gray-800 text-gray-300 border-gray-600 focus:border-blue-300;
+  }
 }
 
+@layer utilities {
+
+  /* .display-none {
+    @apply hidden;
+  }
+  .focus-outline {
+    @apply outline-2 outline-offset-1 outline-skin-fill focus-visible:no-underline focus-visible:outline-dashed;
+  } */
+}
