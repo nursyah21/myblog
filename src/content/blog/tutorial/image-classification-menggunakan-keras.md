@@ -27,18 +27,15 @@ We use the image_dataset_from_directory utility to generate the datasets, and we
 
 ### Setup
 
-```
+```python
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 ```
 
-<!-- Load the data: the Cats vs Dogs dataset
-Raw data download -->
-
 First, let's download the 786M ZIP archive of the raw data:
 
-```
+```bash
 !curl -O https://download.microsoft.com/download/3/E/1/3E1C3F21-ECDB-4869-8368-6DEBA77B919F/kagglecatsanddogs_5340.zip
 
 !unzip -q kagglecatsanddogs_5340.zip
@@ -46,8 +43,9 @@ First, let's download the 786M ZIP archive of the raw data:
 
 ```
 
-<details><summary>result</summary>
+**result**
 
+```
 % Total % Received % Xferd Average Speed Time Time Time Current
 Dload Upload Total Spent Left Speed
 100 786M 100 786M 0 0 182M 0 0:00:04 0:00:04 --:--:-- 195M
@@ -55,25 +53,25 @@ Dload Upload Total Spent Left Speed
 CDLA-Permissive-2.0.pdf kagglecatsanddogs_5340.zip
 PetImages 'readme[1].txt'
 image_classification_from_scratch.ipynb
-
-</details>
+```
 
 Now we have a PetImages folder which contain two subfolders, Cat and Dog. Each subfolder contains image files for each category.
 
-```
+```bash
 !ls PetImages
 ```
 
-<details><summary>result</summary>
+**result**
+
+```
 Cat  Dog
 
 Filter out corrupted images
-
-</details>
+```
 
 When working with lots of real-world image data, corrupted images are a common occurence. Let's filter out badly-encoded images that do not feature the string "JFIF" in their header.
 
-```
+```python
 import os
 
 num_skipped = 0
@@ -95,13 +93,15 @@ for folder_name in ("Cat", "Dog"):
 print("Deleted %d images" % num_skipped)
 ```
 
-<details><summary>result</summary>
+**result**
+
+```
 Deleted 1590 images
-</details>
+```
 
 Generate a Dataset
 
-```
+```python
 image_size = (180, 180)
 batch_size = 128
 
@@ -116,18 +116,19 @@ train_ds, val_ds = tf.keras.utils.image_dataset_from_directory(
 
 ```
 
-<details><summary>result</summary>
+**result**
+
+```
 Found 23410 files belonging to 2 classes.
 Using 18728 files for training.
 Using 4682 files for validation.
-
-</details>
+```
 
 ### Visualize the data
 
 Here are the first 9 images in the training dataset. As you can see, label 1 is "dog" and label 0 is "cat".
 
-```
+```python
 import matplotlib.pyplot as plt
 
 plt.figure(figsize=(10, 10))
@@ -139,9 +140,11 @@ for images, labels in train_ds.take(1):
         plt.axis("off")
 ```
 
-<details><summary>result</summary>
+**result**
+
+```
 Corrupt JPEG data: 2226 extraneous bytes before marker 0xd9
-</details>
+```
 
 ![image](https://keras.io/img/examples/vision/image_classification_from_scratch/image_classification_from_scratch_14_1.png)
 
@@ -149,7 +152,7 @@ Corrupt JPEG data: 2226 extraneous bytes before marker 0xd9
 
 When you don't have a large image dataset, it's a good practice to artificially introduce sample diversity by applying random yet realistic transformations to the training images, such as random horizontal flipping or small random rotations. This helps expose the model to different aspects of the training data while slowing down overfitting.
 
-```
+```python
 data_augmentation = keras.Sequential(
     [
         layers.RandomFlip("horizontal"),
@@ -160,7 +163,7 @@ data_augmentation = keras.Sequential(
 
 Let's visualize what the augmented samples look like, by applying data_augmentation repeatedly to the first image in the dataset:
 
-```
+```python
 plt.figure(figsize=(10, 10))
 for images, _ in train_ds.take(1):
     for i in range(9):
@@ -181,7 +184,7 @@ There are two ways you could be using the data_augmentation preprocessor:
 
 Option 1: Make it part of the model, like this:
 
-```
+```python
 inputs = keras.Input(shape=input_shape)
 x = data_augmentation(inputs)
 x = layers.Rescaling(1./255)(x)
@@ -196,7 +199,7 @@ If you're training on GPU, this may be a good option.
 
 Option 2: apply it to the dataset, so as to obtain a dataset that yields batches of augmented images, like this:
 
-```
+```python
 augmented_train_ds = train_ds.map(
     lambda x, y: (data_augmentation(x, training=True), y))
 ```
@@ -211,7 +214,7 @@ In our case, we'll go with the second option. If you're not sure which one to pi
 
 Let's apply data augmentation to our training dataset, and let's make sure to use buffered prefetching so we can yield data from disk without having I/O becoming blocking:
 
-```
+```python
 # Apply `data_augmentation` to the training images.
 train_ds = train_ds.map(
     lambda img, label: (data_augmentation(img), label),
@@ -231,7 +234,7 @@ We'll build a small version of the Xception network. We haven't particularly tri
 - We start the model with the data_augmentation preprocessor, followed by a Rescaling layer.
 - We include a Dropout layer before the final classification layer.
 
-```
+```python
 def make_model(input_shape, num_classes):
     inputs = keras.Input(shape=input_shape)
 
@@ -286,7 +289,7 @@ keras.utils.plot_model(model, show_shapes=True)
 
 ### Train the model
 
-```
+```python
 epochs = 25
 
 callbacks = [
@@ -305,7 +308,9 @@ model.fit(
 )
 ```
 
-<details><summary>result</summary>
+**result**
+
+```
 Epoch 1/25
 147/147 [==============================] - 116s 746ms/step - loss: 0.6531 - accuracy: 0.6416 - val_loss: 0.7669 - val_accuracy: 0.4957
 Epoch 2/25
@@ -358,14 +363,13 @@ Epoch 25/25
 147/147 [==============================] - 109s 737ms/step - loss: 0.0612 - accuracy: 0.9768 - val_loss: 0.1259 - val_accuracy: 0.9510
 
 <keras.callbacks.History at 0x7fd3941c87b8>
-
-</details>
+```
 
 We get to >90% validation accuracy after training for 25 epochs on the full dataset (in practice, you can train for 50+ epochs before validation performance starts degrading).
 
 ### Run inference on new data
 
-```
+```python
 img = keras.utils.load_img(
     "PetImages/Cat/6779.jpg", target_size=image_size
 )
@@ -379,9 +383,11 @@ score = float(predictions[0])
 print(f"This image is {100 * (1 - score):.2f}% cat and {100 * score:.2f}% dog.")
 ```
 
-<details><summary>result</summary>
+**result**
+
+```
 1/1 [==============================] - 0s 446ms/step
 This image is 85.28% cat and 14.72% dog.
-</details>
+```
 
 terimakasih sudah membaca
