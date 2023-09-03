@@ -58,6 +58,16 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: ' G-GEN0REHG60',
+        anonymizeIP: true,
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -70,13 +80,14 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
+          // {
+          //   type: 'docSidebar',
+          //   sidebarId: 'tutorialSidebar',
+          //   position: 'left',
+          //   label: 'Tutorial',
+          // },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: 'https://npro2.my.id', label: 'HireMe', position: 'left'},
           {
             href: 'https://github.com/nursyah21/myblog',
             label: 'GitHub',

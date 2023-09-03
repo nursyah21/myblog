@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Nursyahjaya, seorang mahasiswa programmer yang saat ini sedang menempuh pendidikan di institut teknologi telkom surabaya
+        Nursyahjaya, seorang mahasiswa jurusan rekayasa perangkat lunak yang saat ini sedang menempuh pendidikan di institut teknologi telkom surabaya
         <br></br>
         <a href="/"> baca lebih lanjut</a>
       </>
