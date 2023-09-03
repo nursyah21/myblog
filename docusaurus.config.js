@@ -58,20 +58,19 @@ const config = {
     ],
   ],
 
-  plugins: [
-    [
-      '@docusaurus/plugin-google-gtag',
-      {
-        trackingID: ' G-GEN0REHG60',
-        anonymizeIP: true,
-      },
-    ],
-  ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
+      head: {
+        items: [
+          {
+            tagName: 'script',
+            src: 'https://www.googletagmanager.com/gtag/js?id=G-GEN0REHG60',
+            async: true
+          }
+        ]
+      },
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Home',

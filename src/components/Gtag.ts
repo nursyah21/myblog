@@ -7,19 +7,22 @@ export default function loadGoogleAnalytics(GA_MEASUREMENT_ID: string) {
   const script = document.createElement('script');
   script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
   script.async = true;
-
   // Append the script to the document's head
   document.head.appendChild(script);
 
-  // Initialize Google Analytics with your Measurement ID
-  script.onload = () => {
-    window.dataLayer = window.dataLayer || [];
-    function gtag(...arg: any[]) {
-      window.dataLayer.push(arg);
-    }
-    gtag('js', new Date());
-    gtag('config', GA_MEASUREMENT_ID);
-  }
+  const script2 = document.createElement('script');
+
+  // Set the content of the script element
+  script2.textContent = `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GEN0REHG60');
+  `;
+
+  // Append the script element to the head of the document
+  document.head.appendChild(script2);
 }
 
 // Load Google Analytics
