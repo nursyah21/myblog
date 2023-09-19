@@ -1,6 +1,6 @@
 Title: jaga-kesehatan
-Description: description
-Date: 2023-09-17 03.52
+Description: kesadaran untuk menjaga kesehatan agar hidup lebih sehat
+Date: 2023-09-17 03:52
 Tags: blog
 
 di usia yg udh 22 tahun, aku benar' kurang menjaga kesehatan. 
